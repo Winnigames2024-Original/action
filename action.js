@@ -1,11 +1,9 @@
 const urlParams = new URLSearchParams(window.location.search);
 const type = urlParams.get('type');
-const fileName = urlParams.get('file');
-const visibleAlert = urlParams.get('alert');
-console.log(type);
-console.log(fileName);
 
 if (type == "cookieDialog") {
+  const fileName = urlParams.get('file');
+  const visibleAlert = urlParams.get('alert');
   if (fileName == "winnicookies.cookie") {
     if (visibleAlert == "true") {
       alert("Cookie message visible now");
@@ -18,5 +16,11 @@ if (type == "cookieDialog") {
     console.log("Cookie Visible Now!!!");
     console.log(type);
     console.log(fileName);
+  }
+}
+else {
+  if (type == "redirect") {
+    const redirectUrl = urlParams.get('url');
+    window.location.href = "./redirect?url=" + redirectUrl + "&element=mainDirect";
   }
 }
