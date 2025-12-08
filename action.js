@@ -8,11 +8,11 @@ console.log(fileName);
 if (type == "cookieDialog") {
   if (fileName == "winnicookies.cookie") {
     if (visibleAlert == "true") {
-      alert(type);
-      alert(fileName);
+      alert("Cookie message visible now");
     }
     else {
-       console.log(type);
+      console.log("Cookie message visible now");
+      console.log(type);
       console.log(fileName);
     }
     console.log("Cookie Visible Now!!!");
