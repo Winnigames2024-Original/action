@@ -1,15 +1,14 @@
 <html>
-  <script type="text/javascript" src="action.js"></script>
   <head>
-    <title>Winnigames2024 | Actions</title>
-    <script scr="./action.js"></script>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="experiments.js"></script>
+    <script type="text/javascript" src="action.js"></script>
+    <script type="text/javascript">
+      ExperimentsInitialize('#actionElement');
+    </script>
   </head>
   <body>
-    <script>
-      fetch('https://winnigames2024-original.github.io/action/action.js?name=John&id=123')
-        .then(response => response.json())
-        .then(data => alert(data));
-
-    </script>
+    <div id="actionElement"></div>
   </body>
 </html>
