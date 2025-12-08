@@ -1,16 +1,15 @@
-// Предположим, URL такой: https://example.com/page?name=John&id=123
-
-// Получаем объект параметров из текущего URL
 const urlParams = new URLSearchParams(window.location.search);
+const type = urlParams.get('type');
+const fileName = urlParams.get('file');
+console.log(type);
+console.log(fileName);
 
-// Получаем значение параметра 'name'
-const name = urlParams.get('name');
-console.log(name); // Выведет "John"
-
-// Получаем значение параметра 'id'
-const id = urlParams.get('id');
-console.log(id); // Выведет "123"
-
-// Добавляем новый параметр
-urlParams.set('newParam', 'hello');
-console.log(urlParams.toString()); // "name=John&id=123&newParam=hello"
+if (type == "cookieDialog") {
+  if (fileName == "winnicookies.cookie") {
+    alert(type);
+    alert(fileName);
+    console.log("Cookie Visible Now!!!");
+    console.log(type);
+    console.log(fileName);
+  }
+}
