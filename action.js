@@ -3,7 +3,7 @@ const type = urlParams.get('type');
 
 if (type == "redirect") {
   const redirectUrl = urlParams.get('url');
-  window.location.href = "./redirect?url=" + redirectUrl + "&url_end=?from=Winnigames2024-Original | Redirecter";
+  window.location.href = "./redirect?url=" + redirectUrl
 }
 
 if (type == "cookieDialog") {
