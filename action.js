@@ -1,6 +1,11 @@
 const urlParams = new URLSearchParams(window.location.search);
 const type = urlParams.get('type');
 
+if (type == "redirect") {
+  const redirectUrl = urlParams.get('url');
+  window.location.href = "./redirect?url=" + redirectUrl + "&url_end=?from=Winnigames2024-Original | Redirecter";
+}
+
 if (type == "cookieDialog") {
   const fileName = urlParams.get('file');
   const visibleAlert = urlParams.get('alert');
@@ -16,11 +21,5 @@ if (type == "cookieDialog") {
     console.log("Cookie Visible Now!!!");
     console.log(type);
     console.log(fileName);
-  }
-}
-else {
-  if (type == "redirect") {
-    const redirectUrl = urlParams.get('url');
-    window.location.href = "./redirect?url=" + redirectUrl + "&element=mainDirect";
   }
 }
