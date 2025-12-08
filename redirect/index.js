@@ -7,8 +7,7 @@ async function openUrlSiteOrPage(urlToRedirect) {
 }
 
 
-const full_url = url + "?Winnigames2024";
-openUrlSiteOrPage(full_url);
+openUrlSiteOrPage(url);
 
 // https://winnigames2024-original.github.io/action/?type=redirect&url=https://example.com
 
