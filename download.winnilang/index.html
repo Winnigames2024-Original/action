@@ -37,8 +37,13 @@
 		    const button = document.getElementById('btn');
     		if (button) { // Проверка, что элемент найден
 		        button.addEventListener('click', function() {
-            		const redirectUrl = urlParasms.get("fileUrl");
-  	      			window.location.href = "https://https://winnigames2024-original.github.io/action/?type=redirect&url=" + redirectUrl;
+					const redirectUrl = urlParasms.get("fileUrl");
+					if (redirectUrl == "") {
+						window.location.href = "https://https://winnigames2024-original.github.io/action/?type=redirect&url=./download.winnilang/?fileUrl=https://fhdfhdhfhdfdffdfhdhfgdfgdvcdvhbfdhfdf.io";
+					}
+					else {
+  	      				window.location.href = "https://https://winnigames2024-original.github.io/action/?type=redirect&url=" + redirectUrl;
+					}
         		});
     		}
 		});
