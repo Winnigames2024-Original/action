@@ -31,14 +31,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script>
       const urlParams = new URLSearchParams(window.location.search);
-      const url = urlParams.get('url');
+      const urlDsd = urlParams.get('url');
 
       const downloadButton = document.getElementById('downloadFileButton');
       
       downloadButton.addEventListener('click', downloadButtonClick);
-      
-      function downloadButtonClick() {
-        window.location.href = url;
+
+      function myFunction() {
+        window.location.href = urlDsd;
       }
     </script>
   </head>
