@@ -33,6 +33,10 @@
       const urlParams = new URLSearchParams(window.location.search);
       const url = urlParams.get('url');
 
+      const downloadButton = document.getElementById('downloadFileButton');
+      
+      downloadButton.addEventListener('click', downloadButtonClick);
+      
       function downloadButtonClick() {
         window.location.href = url;
       }
