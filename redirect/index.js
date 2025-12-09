@@ -1,9 +1,8 @@
 const urlParams = new URLSearchParams(window.location.search);
 const url = urlParams.get('url');
 
-setTimeout(() => {
-  window.location.href = url;
-}, 2000); // 2000 milliseconds = 2 seconds
+alert(url);
+window.location.href = url;
 
 
 
