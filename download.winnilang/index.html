@@ -30,13 +30,12 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script>
-      const urlParams = new URLSearchParams(window.location.search);
-	  let btn = document.getElementById('btn');
-
-      btn.addEventListener('click', function() {
-  	      const redirectUrl = urlParams.get("fileUrl");
-  	      window.location.href = redirectUrl
-      });
+      	const urlParams = new URLSearchParams(window.location.search);
+	  
+		document.querySelector('button').addEventListener('click', function() {
+  			const redirectUrl = urlParams.get("fileUrl");
+  	      	window.location.href = redirectUrl
+		});
     </script>
   </head>
   <body>
