@@ -32,10 +32,8 @@
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const urlDsd = urlParams.get('url');
-      
-      downloadButton.addEventListener('click', downloadButtonClick);
 
-      function myFunction() {
+      function downloadButtonClick() {
         window.location.href = urlDsd;
       }
     </script>
