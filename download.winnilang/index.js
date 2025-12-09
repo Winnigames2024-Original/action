@@ -8,6 +8,6 @@ button.addEventListener('click', function() {
   document.body.style.backgroundColor = 'lightblue';
   window.location.href = urlDsd;
 });
-function downloadButtonClick() {
-  window.location.href = urlDsd;
-}
+// function downloadButtonClick() {
+//   window.location.href = urlDsd;
+// }
