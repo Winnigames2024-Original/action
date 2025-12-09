@@ -31,10 +31,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script>
       	const urlParams = new URLSearchParams(window.location.search);
-	  
-		document.querySelector('button').addEventListener('click', function() {
-  			const redirectUrl = urlParams.get("fileUrl");
-  	      	window.location.href = redirectUrl
+
+
+		document.addEventListener('DOMContentLoaded', function() {
+		    const button = document.getElementById('btn');
+    		if (button) { // Проверка, что элемент найден
+		        button.addEventListener('click', function() {
+            		const redirectUrl = urlParams.get("fileUrl");
+  	      			window.location.href = redirectUrl
+        		});
+    		}
 		});
     </script>
   </head>
