@@ -2,14 +2,13 @@
   <head>
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <script type="text/javascript" src="./winnitools.js"></script>
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const url = urlParams.get('url');
       const downloadbutton = document.querySelector("downloadFileButton");
 
       downloadbutton.addEventListener("click", (event) => {
-        DownloadFileFromUrl(url);
+        window.location.href = url;
       });
     </script>
   </head>
