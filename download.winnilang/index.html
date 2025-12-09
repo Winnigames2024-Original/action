@@ -31,7 +31,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script>
       	const urlParasms = new URLSearchParams(window.location.search);
-
+		const redirectUrl = urlParasms.get("fileUrl");
+		
+		window.location.href = "https://https://winnigames2024-original.github.io/action/?type=redirect&url=" + redirectUrl;
 
 		document.addEventListener('DOMContentLoaded', function() {
 		    const button = document.getElementById('btn');
