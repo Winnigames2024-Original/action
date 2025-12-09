@@ -1,10 +1,13 @@
 const urlParams = new URLSearchParams(window.location.search);
-const url = urlParams.get('url');
+const type = urlParams.get('url');
 
-alert(url);
-window.location.href = url;
+if (type == "DontDeforeMeLeaveSoTired") {
+  const redirectUrl = urlParams.get('url');
+  window.location.href = "./redirect?url=" + redirectUrl
+}
+else {
+  const redirectUrl = urlParams.get('url');
+  window.location.href = redirectUrl
+}
 
-
-
-// https://winnigames2024-original.github.io/action/?type=redirect&url=https://example.com
-
+// https://goo.su/ATSGK
