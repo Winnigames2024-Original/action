@@ -1,4 +1,20 @@
 <html>
+  <style>
+  .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+  }
+  .custom-file-upload:hover {
+    background-color: #e0e0e0;
+  }
+  #fileInput {
+    display: none; /* Скрываем реальный input */
+  }
+</style>
   <head>
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -12,6 +28,11 @@
     </script>
   </head>
   <body>
-    <button id="downloadFileButton" onclick="downloadButtonClick();">Download</button>
+    <form action="download.winnilang" method="post" enctype="multipart/form-data">
+    <!-- <input type="file" id="fileInput" name="fileToUpload"> -->
+    <label class="custom-file-upload">
+      <button id="downloadFileButton" onclick="downloadButtonClick();">Download</button>
+    </label>
+  </form>
   </body>
 </html>
