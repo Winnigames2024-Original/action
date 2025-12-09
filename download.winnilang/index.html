@@ -29,21 +29,18 @@
   <head>
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <script type="text/javascript" src="./index.js"></script>
     <script>
       const urlParams = new URLSearchParams(window.location.search);
-      let btn = document.querySelector('#btn');
+	  let btn = document.getElementById('btn');
 
       btn.addEventListener('click', function() {
-	        alert('!!!');
-  	      const redirectUrl = urlParams.get('url');
+  	      const redirectUrl = urlParams.get("fileUrl");
   	      window.location.href = redirectUrl
       });
     </script>
   </head>
   <body>
     <form>
-    <!-- <input type="file" id="fileInput" name="fileToUpload"> -->
     <center> 
 
       <label class="title_block">
@@ -68,3 +65,6 @@
   </form>
   </body>
 </html>
+
+
+<!-- <input type="file" id="fileInput" name="fileToUpload"> -->
