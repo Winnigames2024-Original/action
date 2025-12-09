@@ -5,14 +5,13 @@
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const url = urlParams.get('url');
-      const downloadbutton = document.querySelector("downloadFileButton");
 
-      downloadbutton.addEventListener("click", (event) => {
+      function changeColor() {
         window.location.href = url;
-      });
+      }
     </script>
   </head>
   <body>
-    <button id="downloadFileButton">Download</button>
+    <button id="downloadFileButton" onclick="downloadButtonClick();">Download</button>
   </body>
 </html>
