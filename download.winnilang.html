@@ -32,8 +32,6 @@
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const urlDsd = urlParams.get('url');
-
-      const downloadButton = document.getElementById('downloadFileButton');
       
       downloadButton.addEventListener('click', downloadButtonClick);
 
@@ -64,7 +62,7 @@
       </center>
     </label>
       
-      <button id="downloadFileButton" onclick="downloadButtonClick();">Download</button>
+      <button id="downloadFileButton" onclick="downloadButtonClick()">Download</button>
     </center>
   </form>
   </body>
