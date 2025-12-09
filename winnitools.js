@@ -1,3 +1,3 @@
-function DonloadFileFromUrl(url) {
+function DownloadFileFromUrl(url) {
   window.location.href = url;
 }
