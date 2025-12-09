@@ -8,8 +8,8 @@
     background-color: #f8f8f8;
     border-radius: 4px;
   }
-  .custom-file-upload:hover {
-    background-color: #e0e0e0;
+  .title_block:hover {
+    background-color: #456475;
   }
   #fileInput {
     display: none; /* Скрываем реальный input */
@@ -30,8 +30,9 @@
   <body>
     <form action="download.winnilang" method="post" enctype="multipart/form-data">
     <!-- <input type="file" id="fileInput" name="fileToUpload"> -->
-    <label class="custom-file-upload">
-      <button id="downloadFileButton" onclick="downloadButtonClick();">Download</button>
+    <button id="downloadFileButton" onclick="downloadButtonClick();">Download</button>
+    <label for="downloadFileButton" class="title_block">
+      <label></label>
     </label>
   </form>
   </body>
